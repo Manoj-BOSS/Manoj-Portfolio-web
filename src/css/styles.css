@@ -1,0 +1,33 @@
+/* Enable smooth scroll behavior for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom font smoothing and antialiasing */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+
+  /* Optional future mobile nav toggle could go here */
+}
+
+/* Optional: Highlight active link (can be enabled via JS later) */
+/*
+nav a.active {
+  color: #f97316;  // Tailwind's orange-500
+  font-weight: bold;
+}
+*/
+
+/* Optional: Improve button interaction on mobile */
+button, a {
+  transition: all 0.3s ease;
+  touch-action: manipulation;
+}
